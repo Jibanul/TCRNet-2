@@ -129,13 +129,13 @@ for sample in samples:
 
     # TCRNet-2 
     output = net(im)
-    # output = output**2
+    output = output**2
     output = output.cpu().detach()[0,0,:,:].numpy()
     Y = pad(output,nrows,ncols)
 
     # TCRNet 2
     output2 = net2(im)
-    # output2 = output2**2
+    output2 = output2**2
     output2 = output2.cpu().detach()[0,0,:,:].numpy()
     Y2 = pad(output2,nrows,ncols)
 
