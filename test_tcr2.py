@@ -140,7 +140,7 @@ for sample in samples:
     Y2 = pad(output2,nrows,ncols)
 
     # Detections
-    ndets = 30
+    ndets = 10
     confs, row_dets, col_dets = get_detections(Y,ndets)
 
     N=len(confs)
