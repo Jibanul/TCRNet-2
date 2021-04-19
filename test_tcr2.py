@@ -145,10 +145,10 @@ for sample in samples:
 
     N=len(confs)
 
-    if N>5:
-        tconfs=confs[6:N]
-    else:
-        tconfs=confs
+    # if N>5:
+    #     tconfs=confs[6:N]
+    # else:
+    #     tconfs=confs
 
     L = []
     for i in range(ndets):
