@@ -1,5 +1,5 @@
 # TCRNet-2
-TCRNet-2 automatic target recognition system. Team Mahalanobis, CRCV, UCF.
+TCRNet-2 automatic target recognition system. Team Dr. Mahalanobis, CRCV, UCF.
 
 
 Please read ReadMe pdf to get started. 
