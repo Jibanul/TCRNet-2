@@ -1,7 +1,3 @@
-# TCRNet-2
-TCRNet-2 automatic target recognition system. 
-
-
 # TCRNet Project
 
 This repository contains scripts and instructions to preprocess data, train models, and test TCRNet and TCRNet-2 booster models. Below is a detailed guide to understanding and running the scripts and using the data files.
@@ -11,6 +7,8 @@ This repository contains scripts and instructions to preprocess data, train mode
 - [Script Descriptions and Sequence](#script-descriptions-and-sequence)
 - [Supporting Scripts](#supporting-scripts)
 - [Folders and Files](#folders-and-files)
+- [Train](#train)
+- [Test](#test)
 - [Dependencies](#dependencies)
 
 ---
@@ -72,9 +70,47 @@ The following scripts are called within the above scripts:
 
 ---
 
+## Train
+
+To train the TCRNet-2 and TCRNet-2 booster models:
+
+1. Ensure the required datasets are available in the `data/` directory.
+2. Generate QCF filters by running:  
+```
+   python qcf_basis.py
+```
+3. Train the models using:  
+```
+   python train_tcr2.py
+```
+4. During the training process, the trained weights and filters will be saved in the `weights_filters/` directory.
+
+---
+
+## Test
+
+To test the trained TCRNet models:
+
+1. Ensure that the trained model weights and filters are available in the `weights_filters/` directory.
+2. Run the testing script:  
+```
+   python test_tcr2.py
+```
+3. To visualize the performance of multiple TCRNets, generate ROC curves using:  
+```
+   python roc_multiple_TCRNets.py
+```
+
+---
+
 ## Dependencies
 
-To set up the environment, install the required dependencies by running:
-```bash
+To set up the environment, install the required dependencies by running:  
+```
 pip install -r requirements.txt
+```
 
+---
+
+## Notes
+Ensure that the data and required files are correctly placed in the respective directories before running the scripts. Follow the sequence mentioned above for the smooth execution of the project pipeline.
