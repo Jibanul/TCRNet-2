@@ -1,6 +1,9 @@
 # Two-Stream Boosted TCRNet for Range-Tolerant Infra-Red Target Detection
 [![Paper](https://img.shields.io/badge/Read-Paper-blue)](https://ieeexplore.ieee.org/abstract/document/9506170)
 
+## Overview
+This repository presents **TCRNet-2**, an improved deep-learning model for detecting vehicular targets in infrared imagery. By processing target and clutter information in parallel and optimizing the **Target-to-Clutter Ratio (TCR)**, TCRNet-2 outperforms conventional CNNs and the original TCRNet. Additionally, a boosted version further enhances target-clutter discrimination, reducing false alarms. Performance is evaluated on a public infrared dataset, showing significant improvements across various distances and lighting conditions.
+
 This repository contains scripts and instructions to preprocess data, train models, and test TCRNet-2 booster models. Below is a detailed guide to understanding and running the scripts and using the data files.
 
 ## Table of Contents
